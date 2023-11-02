@@ -30,7 +30,7 @@ const test = [
   f != e,
 ];
 
-let length = test.length;
+//let length = test.length;
 
 for (let num = 0; num < test.length; num++) {
   console.log(num + 1 + ". " + test[num]);
@@ -114,4 +114,19 @@ for (let n = 999; n >= 0; n--) {
 for (let i = 1; i <= 10; i++) {
   //console.log("The value of i is: " + i + " of 10");
   console.log(`The value of i is: ${i} of 10`);
+}
+
+// ITERATION
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+
+for (let i = 0; i < StarWars.length; i++) {
+  console.log(StarWars[i]);
+}
+
+for (let i = 0; i < StarWars.length; i++) {
+  console.log(`i = ${i} / ${StarWars[i]}`);
+}
+
+for (let i = 0; i < StarWars.length; i += 2) {
+  console.log(`i = ${i} / ${StarWars[i]}`);
 }
