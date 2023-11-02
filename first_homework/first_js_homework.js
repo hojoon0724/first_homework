@@ -24,7 +24,7 @@ const test = [
   c > d,
   "Name" == "Name",
   a < b < c,
-  a != a < d, //why is a != a? Shouldn't it be a < a?
+  a == a < d, // This answer comes out "false" and != comes out "true". Why? Isn't a = a ?
   e != "Kevin",
   48 == "48",
   f != e,
@@ -91,6 +91,19 @@ console.log(letters);
 
 // §4
 // FOR LOOP CONTROL PANEL
-// "for" loop declares the initial variable, sets the condition, and gives the formula to change the variable
-// it's shorter
+// A for loop performs the same operation as a while loop. But what are the key differences, if any? What are the similarities?
+// it's shorter and the variables are self contained. both set a variable, modifier, and a formula to run when true.
+
+// What are the three components of the control panel? Each component is separated by a semicolon ;.
+//"for" loop declares the initial variable, sets the condition, and gives the formula to change the variable
+
+// FOR LOOP II
+
+for (let n = 0; n < 1000; n++) {
+  console.log(n);
+}
+
+// What is the difference between \ (backslash, above the enter/return key) and / (forward slash or just slash, shares the key with the ?)? What is \ doing in the string?
+// "\" says to ignore the next character's function. Without "\" the ' would be considered as a closing mark and it would break the string.
+
 // they do the same thing
